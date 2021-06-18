@@ -19,7 +19,7 @@ int main()
             if(i<0)
                 continue;
             ll c2=min((x-a*i)/b,(y-i*b)/a);
-            if(c2<0)
+            if(x<a*i || y<b*i)
                 continue;
             ct=max(i+c2,ct);
         }
@@ -28,7 +28,7 @@ int main()
             if(i<0)
                 continue;
             ll c2=min((x-b*i)/a,(y-i*a)/b);
-            if(c2<0)
+            if(x<b*i || y<a*i)
                 continue;
             ct=max(i+c2,ct);
         }
