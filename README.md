@@ -1,5 +1,5 @@
 # codechef
-This Repo contains All of My Competitive Programming Problem solutions. 
+This Repository contains All of My Competitive Programming Problem solutions. 
 Including
 Codechef
 Codeforces
