@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int is_special(char *input1[],int input2)
+{
+    int count=0;                           
+    for(int i=0;i<input2;i++)
+    {
+            stringstream integer(input1[i]);
+            int n=0;
+            integer>>n;
+            for(int i=0;i<=n/2;i++)
+            {
+                int num=i;
+                  // 6 lines reverses no
+                int rev = 0; 
+                while(num > 0)
+                {
+                    rev = rev*10 + num%10;
+                    num = num/10;
+                }
+                int j=rev;
+
+                if((i+j)==n)
+                {
+                    count++;
+                    break;
+                }
+            }
+    }
+    return count;
+}
+
+int main()
+{
+        char *str[2] = { "12", "3" };//creating string array of size n
+        cout<<is_special(str,2);
+        return 0;
+}
