@@ -4,5 +4,5 @@ Including
 Codechef
 Codeforces
 Hackerrank
-Hackeresrth
+Hackerearth
  etc. 
